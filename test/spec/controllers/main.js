@@ -1,23 +1,52 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+/**
+ * @ngdoc function
+ * @name footerApp.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of the footerApp
+ */
+angular.module('profile-App')
+  .controller('MainCtrl',['$scope', function ($scope) {
+    var programminglanguage = [
+      'JAVA',
+      'PHP',
+      'Javascript',
+      'HTML',
+      'CSS',
+      'SQL',
+      'JQuery',
+      'Python',
+      'C++'
+    ];
 
-  // load the controller's module
-  beforeEach(module('footerApp'));
+    var tools = [
+    	'Sublime',
+    	'Eclipse',
+    	'Brackets',
+    	'Git',
+    	'GitHub',
+    	'Grunt',
+    	'Gulp',
+    	'Sass',
+    	'Jade',
+    	'JIRA'
+    ];
 
-  var MainCtrl,
-    scope;
+    var frames = [
+    	'AngularJS',
+    	'NodeJS',
+    	'Express',
+    	'Bootstrap',
+    	'MySQL',
+    	'MongoDB',
+    	'Selenium',
+    	'testNG',
+    	'J-Unit'
+    ];
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
-      // place here mocked dependencies
-    });
-  }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
-  });
-});
+ 	$scope.programminglanguage = programminglanguage;
+ 	$scope.tools = tools;
+ 	$scope.frames = frames;
+  }]);
