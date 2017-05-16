@@ -43,7 +43,6 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  width: 100%
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -108,5 +107,68 @@ body {
   color:#fff;
   text-align: center;
   padding:50px;
-  margin-bottom:30px;
+  margin-top: 15px;
+  margin-bottom:50px;
+}
+
+.footer{
+    margin-top: 25px;
+}
+
+.footer p{
+  text-align: center;
+}
+
+.footer h4{
+  text-align: center; 
+}
+
+.footer ul{
+  text-align:center;
+  list-style-type:none;
+  
+}
+
+.footer ul li{
+  display:inline-block;
+  margin-left: 7px;
+}
+
+.footer ul li:hover{
+  background: #DCDCDC !important;
+}
+
+.footer a{
+  color: #808080;
+  text-decoration: none;
+}
+
+.panel-body ul{
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: 0;
+  padding-left: 0; 
+}
+
+.panel-body ul li{
+  display:inline;
+  float: left;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+.panel{
+  
+}
+
+h1 {
+  font-size: 5.9vw;
+}
+
+h3{
+  font-size: 3.0vw;
+}
+
+p {
+  font-size: 2vmin;
 }
