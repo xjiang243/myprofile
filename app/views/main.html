@@ -1,8 +1,8 @@
 <div class="jumbotron jumbotron-main">
 	<div class="container">
 	     <h1 style="font-family: 'Dancing Script', cursive">Xuhui Jiang</h1>
-	     <p><a class="btn btn-primary btn-lg" href="about.html">Read More</a> 
-	     <a class="btn btn-default btn-lg" href="contact.html">Contact Me</a></p>
+	     <p><a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myResume">Read More</a> 
+	     <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Contact Me</a></p>
 	</div>
 </div>
 
@@ -10,26 +10,30 @@
    <div class="row">
 
 	   <div class="col-xs-4 col-md-4 box">
-		     <div class="well">
-		     	<a href="#!/experience">
-			     	<span class="glyphicon glyphicon-paperclip"></span>
-			     	<h3>Experience</h3>
-		     	</a>
-		     </div>
+	   		<a href="#!/experience">
+			     <div class="well">
+				     <span class="glyphicon glyphicon-paperclip"></span>
+				     <h3>Experience</h3>
+			     </div>
+		    </a>
 	    </div>
 
 	    <div class="col-xs-4 col-md-4 box">
-		     <div class="well">
-		     	<span class="glyphicon glyphicon-education"></span>
-		     	<h3>Education</h3>
-		     </div>
+	    	<a href="#!/education">
+			     <div class="well">
+			     	<span class="glyphicon glyphicon-education"></span>
+			     	<h3>Education</h3>
+			     </div>
+		    </a>
 	    </div>
 
 	    <div class="col-xs-4 col-md-4 box">
-		     <div class="well">
-		     	<span class="glyphicon glyphicon-certificate"></span>
-		     	<h3>Certifications</h3>
-		     </div>
+	    	<a href="#!/certifications">
+			     <div class="well">
+			     	<span class="glyphicon glyphicon-certificate"></span>
+			     	<h3>Certifications</h3>
+			     </div>
+		    </a>
 	    </div>
    </div>
 </div>
@@ -48,7 +52,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-4 col-md-4">
+		<div class="col-xs-11 col-sm-11 col-md-4 col-lg-4">
 			<div class="panel panel-default">
 				  <div class="panel-heading">
 				     <h3 class="panel-title">Programming Language</h3>
@@ -63,7 +67,7 @@
 			</div>
 		</div>
 
-		<div class="col-xs-4 col-md-4">
+		<div class="col-xs-11 col-sm-11 col-md-4 col-lg-4">
 			<div class="panel panel-default">
 				  <div class="panel-heading">
 				     <h3 class="panel-title">Editor and Tools</h3>
@@ -78,7 +82,7 @@
 			</div>
 		</div>
         
-        <div class="col-xs-4 col-md-4">
+        <div class="col-xs-11 col-sm-11 col-md-4 col-lg-4">
 			<div class="panel panel-default">
 				  <div class="panel-heading">
 				     <h3 class="panel-title">Framework and Database</h3>
@@ -97,5 +101,43 @@
 </div>
 
 
+<!-- Contact Me Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
+      </div>
+      <div class="modal-body">
+        <span class="glyphicon glyphicon-phone"> Telephone: (312)-843-9544</span>
+        <hr>
+        <span class="glyphicon glyphicon-envelope"> Email: xjiang245@gmail.com</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Resume Modal -->
+<div class="modal fade" id="myResume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">My Resume</h4>
+      </div>
+      <div class="modal-body">
+        <img src="../images/resume.png" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 	
             
